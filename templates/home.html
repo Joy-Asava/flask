@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <h2>Give your info:</h2>
+
+    <form action="{{url_for('submit')}}" method="post">
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" placeholder="username"><br>
+
+        <label >GENDER</label><br>
+        <label for ="male">Male</label>
+        <input type="radio" id="male" name="gender"  value="male">
+        <label for ="female">Female</label>
+        <input type="radio" id="female" name="gender"  value="female"><br>
+        
+        
+        <label >HOBBIES</label><br>
+        <label for="cooking">Cooking</label>
+        <input type="checkbox" id="cooking" value="cooking" name="hobbies" ><br>
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="reading" value="reading"  name="hobbies" ><br>
+        <label for="travelling">Travellling</label>
+        <input type="checkbox" id="travelling" value="travelling"  name="hobbies" ><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

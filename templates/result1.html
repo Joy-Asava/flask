@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Submited information</h1>
+    <table>
+        {% comment %} {% for key, value in data.items()%} {% endcomment %}
+        <tr>
+            <th>Username</th>
+            <td>{{ data }}</td>
+
+            <th>Gender</th>
+            <td>{{ value }}</td>
+
+            <th>Hobbies</th>
+            <td>{{ value }}</td>
+        </tr>
+        {% comment %} {% endfor %} {% endcomment %}
+    </table>
+</body>
+</html>
